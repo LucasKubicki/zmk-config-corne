@@ -77,7 +77,7 @@
 &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF &kp C_MUTE                    &mmv MOVE_DOWN                      &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                                          &trans        &trans        &trans                                                                            &kp INS          &kp DEL          &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+            sensor-bindings = <&inc_dec_kp LG(F9) LG(F10)>;
         };
 
         raise_layer {
