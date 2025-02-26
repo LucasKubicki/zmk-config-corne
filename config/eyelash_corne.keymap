@@ -23,11 +23,8 @@
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
 &mt {
-    tapping-term-ms = <200>;      // Equivalent to "tapping-term = 200ms"
-    hold-preferred;               // Equivalent to "permissive hold = uncheck"
-    ignore-mod-tap-interrupt;     // Equivalent to "ignore mod tap interrupt = checked"
-    // No equivalent for "tapping force hold = uncheck" (default in ZMK)
-    // No need for "retro-tapping = uncheck" (default behavior)
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
 };
 
 / {
