@@ -27,6 +27,11 @@
     flavor = "tap-preferred";
 };
 
+&lt {
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
+};
+
 / {
     behaviors {
         td0: td0 {
@@ -57,9 +62,9 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB    &kp Q       &kp W           &kp E           &kp R         &kp T                              &kp UP                &kp Y        &kp U         &kp I            &kp O         &kp P          &kp BSPC
-&td0       &mt LGUI A  &mt LALT S      &mt LCTRL D     &mt LSHIFT F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &mt RSHIFT F  &mt RCTRL K      &mt RALT L    &mt RGUI SEMI  &kp SQT
+&td0       &mt LGUI A  &mt LALT S      &mt LCTRL D     &mt LSHIFT F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &mt RSHIFT J  &mt RCTRL K      &mt RALT L    &mt RGUI SEMI  &kp SQT
 &kp LCTRL  &kp Z       &kp X           &kp C           &kp V         &kp B       &kp SPACE              &kp DOWN              &kp N        &kp M         &kp COMMA        &kp DOT       &kp FSLH       &kp ESC
-                             &kp ESC  &mo 1  &lt 3 SPACE                                              &lt 3 ENTER  &mo 2  &kp RALT
+                             &kp ESC  &mo 1  &lt 3 SPACE                                              &lt 4 ENTER  &mo 2  &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
@@ -96,5 +101,17 @@
             >;
             sensor-bindings = <&scroll_encoder>;
         };
+
+
+            accent_layer {
+                    display-name = "ACCENT";
+                    bindings = <
+        &trans  &kp EXCL      &kp AT        &kp HASH   &kp RA(G)   &kp RA(F)                           &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+        &trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp RSHIFT  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+        &trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5  &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                            &trans     &trans     &kp SPACE                                                            &kp RET    &trans     &trans
+                    >;
+                    sensor-bindings = <&scroll_encoder>;
+                };
     };
 };
