@@ -199,9 +199,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - '@'
-  - '#'
   - AltGr+G
   - AltGr+F
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - ^
   - '&'
