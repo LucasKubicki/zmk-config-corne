@@ -106,7 +106,7 @@
                     display-name = "ACCENT";
                     bindings = <
         &trans  &trans     &trans &kp RA(G)   &kp RA(F)   &trans                    &trans               &trans  &kp RA(H)  &trans  &kp RA(P)  &trans  &trans
-        &trans  &kb RA(Z)  &trans &trans      &kp RA(N6)  &trans            &trans  &trans  &trans       &trans  &trans     &trans  &trans     &trans  &trans
+        &trans  &kp RA(Z)  &trans &trans      &kp RA(N6)  &trans            &trans  &trans  &trans       &trans  &trans     &trans  &trans     &trans  &trans
         &trans  &trans  &trans    &kp RA(C)   &trans      &trans  &trans            &trans               &trans  &trans     &trans  &trans     &trans  &trans
                                             &trans     &trans     &trans                                 &trans  &trans  &trans
                     >;
