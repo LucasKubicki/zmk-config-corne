@@ -25,11 +25,13 @@
 &mt {
     tapping-term-ms = <200>;
     flavor = "tap-preferred";
+    quick-tap-ms = <200>;
 };
 
 &lt {
     tapping-term-ms = <200>;
     flavor = "tap-preferred";
+    quick-tap-ms = <200>;
 };
 
 / {
@@ -85,8 +87,8 @@
                     bindings = <
         &trans  &trans   &trans  &trans   &trans   &trans                               &trans            &kp LS(EQUAL)   &kp N7     &kp N8     &kp N9    &none       &none
         &trans  &trans   &trans  &trans   &trans   &trans                       &trans  &trans &trans     &kp EQUAL       &kp N4     &kp N5     &kp N6    &kp LS(N8)  &none
-        &trans  &trans   &trans  &trans   &trans   &trans   &trans                      &trans            &kp QMARK          &kp N1     &kp N2     &kp N3    &none       &none
-                 &trans        &trans        &trans                                                             &kp ENTER          &kp N0          &kp MINUS
+        &trans  &trans   &trans  &trans   &trans   &trans   &trans                      &trans            &kp SLASH          &kp N1     &kp N2     &kp N3    &none       &none
+                 &trans        &trans        &trans                                                             &kp DOT          &kp N0          &kp MINUS
                     >;
                     sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
                 };
@@ -94,10 +96,10 @@
         layer_3 {
                     display-name = "NAV";
                     bindings = <
-        &trans  &trans   &trans  &trans   &trans   &trans                               &trans            &kp LS(EQUAL)   &kp N7     &kp N8     &kp N9    &none       &none
-        &trans  &trans   &trans  &trans   &trans   &trans                       &trans  &trans &trans     &kp EQUAL       &kp N4     &kp N5     &kp N6    &kp LS(N8)  &none
-        &trans  &trans   &trans  &trans   &trans   &trans   &trans                      &trans            &kp QMARK          &kp N1     &kp N2     &kp N3    &none       &none
-                 &trans        &trans        &trans                                                             &kp ENTER          &kp N0          &kp MINUS
+        &trans  &trans   &trans  &trans   &trans   &trans                               &trans            &trans    &trans      &trans      &trans      &trans  &trans
+        &trans  &trans   &trans  &trans   &trans   &trans                       &trans  &trans &trans     &kp LEFT  &kp DOWN    &kp UP      &kp RIGHT   &trans  &trans
+        &trans  &trans   &trans  &trans   &trans   &trans   &trans                      &trans            &kp HOME  &kp PG_DN   &kp PG_UP   &kp END     &trans   &trans
+                 &trans        &trans        &trans                                                             &trans  &trans  &trans
                     >;
                     sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
                 };
