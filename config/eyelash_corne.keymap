@@ -117,13 +117,13 @@
 
         layer_5 {
             display-name = "SYMBOL";
-            bindings = <
-&trans  &kp LS(N1)    &kp LS(N2)    &kp LS(3)  &kp LS(4)  &kp LS(5)                           &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5  &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                            &kp RET    &trans     &trans
-            >;
-            sensor-bindings = <&scroll_encoder>;
+             bindings = <
+        &trans  &kp LS(N1)    &kp LS(N2) &kp LS(N3) &kp LS(N4)   &kp LS(N5)                   &trans               &kp LS(GRAVE)  &kp GRAVE      &kp SQT     &kp LS(SQT)  &kp LS(N6)   &trans
+        &trans  &kp LS(COMMA) &kp LBKT   &kp LS(N9) &kp LS(LBKT) &kp EQUAL            &trans  &trans  &trans       &kp LS(N8)     &kp LS(RBKT)   &kp LS(N0)  &kp RBKT     &kp LS(DOT)  &trans
+        &trans  &trans        &trans     &kp LS(N7) &kp LS(NUBS) &kp NUBS  &trans             &trans               &trans         &trans         &trans      &trans       &trans       &trans
+                                         &kp LS(EQUAL)  &kp MINUS  &kp LS(MINUS)                                   &trans  &trans  &trans
+                    >;
+                     sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_6 {
