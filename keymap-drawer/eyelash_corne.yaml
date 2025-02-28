@@ -277,8 +277,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Sft+7, s: Sft+&}
-  - Sft+NUBS
-  - NUBS
+  - {t: Sft+\, s: Sft+|}
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
