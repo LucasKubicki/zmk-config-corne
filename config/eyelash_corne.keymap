@@ -31,7 +31,7 @@
 &lt {
     tapping-term-ms = <200>;
     flavor = "tap-preferred";
-    quick-tap-ms = <200>;
+    quick-tap-ms = <400>;
 };
 
 / {
@@ -120,7 +120,7 @@
              bindings = <
         &trans  &kp LS(N1)    &kp LS(N2) &kp LS(N3) &kp LS(N4)   &kp LS(N5)                   &trans               &kp LS(GRAVE)  &kp GRAVE      &kp SQT     &kp LS(SQT)  &kp LS(N6)   &trans
         &trans  &kp LS(COMMA) &kp LBKT   &kp LS(N9) &kp LS(LBKT) &kp EQUAL            &trans  &trans  &trans       &kp LS(N8)     &kp LS(RBKT)   &kp LS(N0)  &kp RBKT     &kp LS(DOT)  &trans
-        &trans  &trans        &trans     &kp LS(N7) &kp LS(NUBS) &kp NUBS  &trans             &trans               &trans         &trans         &trans      &trans       &trans       &trans
+        &trans  &trans        &trans     &kp LS(N7) &kp LS(BSLH) &kp BSLH  &trans             &trans               &trans         &trans         &trans      &trans       &trans       &trans
                                          &kp LS(EQUAL)  &kp MINUS  &kp LS(MINUS)                                   &trans  &trans  &trans
                     >;
                      sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
